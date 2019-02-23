@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-consul
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        instanceId: ${spring.application.name}:${random.value}
+        healthCheckInterval: 10s
+
+server:
+  port: 8080

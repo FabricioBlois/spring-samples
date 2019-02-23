@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-neo4j
+  data:
+    neo4j:
+      uri: bolt://localhost
+
+server:
+  port: 8080

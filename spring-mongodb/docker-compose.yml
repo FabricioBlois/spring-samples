@@ -1,0 +1,17 @@
+#mongodb:
+#  image: mongo:latest
+#  ports:
+#    - "27017:27017"
+#  environment:
+#    MONGODB_USERNAME: spring
+#    MONGODB_PASSWORD: springmongodb
+#    MONGODB_DBNAME: dbBeer
+
+mongodb:
+  image: fralmeida/mongodb:latest
+  ports:
+    - "27017:27017"
+  environment:
+    MONGODB_USERNAME: beer
+    MONGODB_PASSWORD: beer
+    MONGODB_DBNAME: dbBeer

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-feign
+
+server:
+  port: 8081
+
+endpoints:
+  spring:
+    name: spring-mongodb

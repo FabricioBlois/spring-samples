@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cassandra
+  data:
+    cassandra:
+      keyspaceName: beer
+      contactPoints: 127.0.0.1
+      port: 9042
+
+server:
+  port: 8080

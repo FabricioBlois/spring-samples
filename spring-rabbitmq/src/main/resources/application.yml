@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: spring-rabbitmq
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: beer
+    password: beer
+    virtual-host: beer
+
+server:
+  port: 8080
+
+rabbit:
+  mappings:
+    config:
+      initialInterval: 5
+      maxInterval: 5
+      multiplier: 1
+      retries: 1
+      consumers: 1
+    bindings:
+      -
+        topic: ha.input
+        routing-key: ha.input
+        queue: ha.input.beer
+        declare: true

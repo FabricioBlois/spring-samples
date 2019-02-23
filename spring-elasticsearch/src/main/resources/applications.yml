@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-elasticsearch
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9300
+      cluster-name: elasticsearch
+
+management:
+  security:
+    enabled: false
+
+server:
+  port: 8080

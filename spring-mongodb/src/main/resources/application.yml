@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-mongodb
+  data:
+    mongodb:
+      #pwd: '{cipher}59af55035589f6fc7976102518329a0d871ee78cd7374bbd168b46a1a8cece0a'
+      #uri: mongodb://beer:${spring.data.mongodb.pwd}@localhost:27017/dbBeer
+      uri: mongodb://beer:beer@localhost:27017/dbBeer
+
+#encrypt:
+#  key: IMSYMMETRIC
+
+server:
+  port: 8080

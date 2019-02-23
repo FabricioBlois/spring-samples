@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-mysql
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_beer
+    username: springmysql
+    password: springmysql
+
+server:
+  port: 8080

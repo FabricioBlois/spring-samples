@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-couchdb
+
+couchbase:
+  ip: localhost
+  bucket: couchdb-beer
+  password: admin
+
+server:
+  port: 8080
